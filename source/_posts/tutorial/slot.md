@@ -274,16 +274,16 @@ var MyComponent = san.defineComponent({
         + '</x-men></div>',
 
     attached: function () {
-        var slots = this.ref('men').slot();
-
+        var slots = this.ref('men').slot()
+        
         // 3
-        slots.length
-
-        // truthy
-        slots[0].isInserted
-
-        // truthy
-        contentSlot.isScoped
+        console.log(slots.length)
+        
+        // true
+        console.log(slots[0].isInserted)
+        
+        // true
+        console.log(slots[0].isScoped)
     }
 });
 
@@ -339,16 +339,16 @@ var MyComponent = san.defineComponent({
         + '</x-men></div>',
 
     attached: function () {
-        var slots = this.ref('men').slot();
-
+        var slots = this.ref('men').slot()
+        
         // 3
-        slots.length
-
-        // truthy
-        slots[0].isInserted
-
-        // truthy
-        contentSlot.isScoped
+        console.log(slots.length)
+        
+        // true
+        console.log(slots[0].isInserted)
+        
+        // true
+        console.log(slots[0].isScoped)
     }
 });
 
